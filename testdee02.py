@@ -14,10 +14,15 @@ class Shuttichuai:
     def showData(self):
         print(self.yee * 20)
 
+    # destructor ไม่ใช่ member เเต่จะทำงานทุกครั้งที่ object ทำงานเสร็จ (ถูกทำลายทิ้ง)
+    def __del__(self):
+        print("Good morning studant.....")
+
 deeA = Shuttichuai(5,20,30)
 deeB = Shuttichuai(40,50,60)
 deeC = Shuttichuai(10,20,30)
 deeD = Shuttichuai(8,9,10)
+
 print (deeA.mee + deeB.mee)
 deeC.showData()
 
